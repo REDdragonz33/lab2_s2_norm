@@ -1,0 +1,54 @@
+# Задание 1
+LOGIC_EVAL !0
+LOGIC_EVAL !!1
+LOGIC_EVAL !(1&0)|0
+LOGIC_EVAL 1 ^ 1 | 1
+LOGIC_EVAL ( 1 | 0 ) & 1
+LOGIC_EVAL 1 0
+# Задание 2
+SETADD alpha
+SETADD beta
+SET_AT alpha
+SETDEL alpha
+SET_AT alpha
+# Задание 3
+SETS_NEW
+SETS_NEW
+SETS_ADD 0 a
+SETS_ADD 0 b
+SETS_ADD 1 b
+SETS_ADD 1 c
+SETS_MAX
+# Задание 4
+PIRAM_ADD 3 1
+PIRAM_ADD 2 2
+PIRAM_ADD 3 3
+PIRAM_CALC
+# Задание 5
+TREE_FORKS 7 3 2 1 9 5 4 6 8 0
+# Задание 6.1
+HT_PUT key value1
+HT_GET key
+HT_PUT key value2
+HT_GET key
+CK_PUT cuckoo hello
+CK_GET cuckoo
+CK_PUT cuckoo world
+CK_GET cuckoo
+HT_ANALYZE
+# Задание 6.2
+ROUTE_ADD A B 1
+ROUTE_ADD B C 2
+ROUTE_ADD A C 4
+ROUTE_FIND A C
+ROUTE_ADD A C 2
+ROUTE_FIND A C
+ROUTE_FIND X Y
+# Задание 7
+LFU_SET a 10
+LFU_SET b 20
+LFU_SET c 30
+LFU_GET a
+LFU_SET d 40
+LFU_GET b
+LFU_GET a
